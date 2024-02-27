@@ -1,0 +1,883 @@
+/*! destyle.css v3.0.2 | MIT License | https://github.com/nicolas-cusan/destyle.css */
+
+/* Reset box-model and set borders */
+/* ============================================ */
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: 0;
+}
+
+/* Document */
+/* ============================================ */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ * 3. Remove gray overlay on links for iOS.
+ */
+
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  -webkit-tap-highlight: transparent; /* 3*/
+}
+
+/* Sections */
+/* ============================================ */
+
+/**
+ * Remove the margin in all browsers.
+ */
+
+body {
+  margin: 0;
+  color: #2F2117;
+  font-family: 'Hiragino Sans','繝偵Λ繧ｮ繝手ｧ偵ざ繧ｷ繝�け','繝｡繧､繝ｪ繧ｪ',sans-serif;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+
+main {
+  display: block;
+}
+
+/* Vertical rhythm */
+/* ============================================ */
+
+p,
+table,
+blockquote,
+address,
+pre,
+iframe,
+form,
+figure,
+dl {
+  margin: 0;
+}
+
+/* Headings */
+/* ============================================ */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0;
+}
+
+/* Lists (enumeration) */
+/* ============================================ */
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Lists (definition) */
+/* ============================================ */
+
+dt {
+  font-weight:600;
+}
+
+dd {
+  margin-left: 0;
+}
+
+/* Grouping content */
+/* ============================================ */
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+  border-top-width: 1px;
+  margin: 0;
+  clear: both;
+  color: inherit;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: inherit; /* 2 */
+}
+
+address {
+  font-style: inherit;
+}
+
+/* Text-level semantics */
+/* ============================================ */
+
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+
+a {
+  background: transparent;
+  text-decoration: none;
+  color: inherit;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+  font-weight:600er;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: inherit; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Replaced content */
+/* ============================================ */
+
+/**
+ * Prevent vertical alignment issues.
+ */
+
+svg,
+img,
+embed,
+object,
+iframe {
+  vertical-align: bottom;
+}
+
+/* Forms */
+/* ============================================ */
+
+/**
+ * Reset form fields to make them styleable.
+ * 1. Make form elements stylable across systems iOS especially.
+ * 2. Inherit text-transform from parent.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  -webkit-appearance: none; /* 1 */
+  appearance: none;
+  vertical-align: middle;
+  color: inherit;
+  font: inherit;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  border-radius: 0;
+  text-align: inherit;
+  text-transform: inherit; /* 2 */
+}
+
+/**
+ * Reset radio and checkbox appearance to preserve their look in iOS.
+ */
+
+[type="checkbox"] {
+  -webkit-appearance: checkbox;
+  appearance: checkbox;
+}
+
+[type="radio"] {
+  -webkit-appearance: radio;
+  appearance: radio;
+}
+
+/**
+ * Correct cursors for clickable elements.
+ */
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  cursor: pointer;
+}
+
+button:disabled,
+[type="button"]:disabled,
+[type="reset"]:disabled,
+[type="submit"]:disabled {
+  cursor: default;
+}
+
+/**
+ * Improve outlines for Firefox and unify style with input elements & buttons.
+ */
+
+:-moz-focusring {
+  outline: auto;
+}
+
+select:disabled {
+  opacity: inherit;
+}
+
+/**
+ * Remove padding
+ */
+
+option {
+  padding: 0;
+}
+
+/**
+ * Reset to invisible
+ */
+
+fieldset {
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+}
+
+legend {
+  padding: 0;
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+  outline-offset: -2px; /* 1 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Fix font inheritance.
+ */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/**
+ * Clickable labels
+ */
+
+label[for] {
+  cursor: pointer;
+}
+
+/* Interactive */
+/* ============================================ */
+
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+  display: list-item;
+}
+
+/*
+ * Remove outline for editable content.
+ */
+
+[contenteditable]:focus {
+  outline: auto;
+}
+
+/* Tables */
+/* ============================================ */
+
+/**
+1. Correct table border color inheritance in all Chrome and Safari.
+*/
+
+table {
+  border: inherit; /* 1 */
+  border-collapse: collapse;
+}
+
+caption {
+  text-align: left;
+}
+
+td,
+th {
+  vertical-align: top;
+  padding: 0;
+}
+
+th {
+  text-align: left;
+  font-weight:600;
+}
+
+/* 繝倥ャ繝繝ｼ02 */
+header.header02 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+}
+header.header02 h1.logo {
+  width: 60px;
+  height: 30px;
+}
+header.header02 h1.logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+header.header02 nav.nav ul.item {
+  display: flex;
+  align-items: center;
+}
+header.header02 nav.nav ul.item li.list {
+  padding-left: 24px;
+}
+header.header02 nav.nav ul.item li.list a {
+  font-weight: 600;
+}
+header.header02 nav.nav ul.item li.contact a {
+  display: inline-block;
+  background: #2F2117;
+  color: #fff;
+  font-size: 14px;
+  padding: 8px 18px;
+}
+header.header02 #menu-btn,.nav-hidden {
+  display: none;
+}
+/* SP縺薙％縺九ｉ */
+@media (max-width: 768px) {
+  header.header02 #menu-btn{
+    display: block;
+    width:30px;
+    height: 20px;
+    position: fixed;
+    top: 16px;
+    right: 16px;
+    z-index: 3;
+  }
+  header.header02 #menu-btn span,
+  header.header02 #menu-btn span::before,
+  header.header02 #menu-btn span::after {
+    content: "";
+    height: 2px;
+    width: 100%;
+    border-radius: 3px;
+    background: #e4c140;
+    position: absolute;
+    transition: 0.2s;
+  }
+  header.header02 #menu-btn span {
+    top: 0;
+  }
+  header.header02 #menu-btn span:before {
+    top: 8px;
+  }
+  header.header02 #menu-btn span:after {
+    top: 16px;
+  }
+  header.header02 #nav-input:checked ~ #menu-btn span {
+    top: 8px;
+    transform: rotate(45deg);
+  }
+  header.header02 #nav-input:checked ~ #menu-btn span::before {
+    opacity: 0;
+  }
+  header.header02 #nav-input:checked ~ #menu-btn span::after {
+    top: 0;
+    transform: rotate(-90deg);
+  }
+  header.header02 h1.logo {
+    width: 50px;
+    height: 20px;
+    margin: 0 auto;
+  }
+  header.header02 nav.nav {
+    width: 230px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden;
+    background: #fff;
+    transition: 0.5s;
+  }
+  header.header02 nav.nav ul.item {
+    display: block;
+    padding: 64px 32px;
+  }
+  header.header02 nav.nav ul.item li.list {
+    padding-left: 0;
+    padding-bottom: 24px;
+  }
+  header.header02 nav.nav ul.item li.contact {
+    text-align: center;
+    padding-top: 8px;
+  }
+  header.header02 nav.nav ul.item li.contact a {
+    width: 100%;
+    padding: 14px;
+  }
+  header.header02 #nav-input:checked ~ nav.nav {
+    opacity: 1;
+    visibility: visible;
+  }
+  }
+
+/*繧ｭ繝ｼ繝薙ず繝･繧｢繝ｫ */
+section.fv-container {
+  width: 100%;
+  height: 80vh;
+  background: url(./img/fv.jpg) no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section.fv-container h2.copy {
+  color: #fff;
+  font-size: 48px;
+  font-weight: 600;
+  text-shadow: 0px 0px 20px rgba(000, 000, 000, 0.5);
+}
+/* SP縺薙％縺九ｉ */
+@media (max-width: 768px) {
+  section.fv-container h2.copy {
+    font-size: 28px;
+}
+}
+
+/* 隕句�縺�06 */
+  div.title06 h2 {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    position: relative;
+    margin-bottom: 64px;
+  }
+ div.title06 h2::before {
+    font-size: 28px;
+    color: #e4c140;
+    font-weight: 500;
+    position: absolute;
+    bottom: -36px;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+/* 蠖薙く繝｣繝ｳ繝励↓縺､縺�※隕句�縺� */
+  section.about div.title06 h2::before {
+    content: "About us";
+  }
+/* 繧ｵ繝ｼ繝薙せ蜀�ｮｹ隕句�縺� */
+section.service div.title06 h2::before {
+  content: "Service";
+}
+ /* 譁咎≡繝励Λ繝ｳ隕句�縺� */
+ section.plan div.title06 h2 {
+text-align: left;
+}
+section.plan div.title06 h2::before {
+  content: "Plans";
+}
+
+/* 縺雁撫縺�粋繧上○隕句�縺暦ｿ･ */
+section.contact div.title06 h2::before {
+  content: "Contact";
+}
+
+/* 蠖薙く繝｣繝ｳ繝励↓縺､縺�※*/
+section.about {
+background-color: #F0F0F0;
+padding: 96px 16px;
+}
+section.about p {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 2;
+}
+
+/*繧ｵ繝ｼ繝薙せ蜀�ｮｹ */
+section.service {
+  padding: 128px 16px 160px;
+}
+/* 繧ｫ繝ｼ繝峨�CSS縺ｯ縺薙％縺九ｉ */
+section.service ul.item {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  max-width: 960px;
+  margin: 0 auto;
+}
+section.service li.list {
+  width: 33.3%;
+  min-height: 420px;
+  margin-right: 32px;
+  display: flex;
+  flex-direction: column;
+}
+section.service li.list:last-child {
+  margin-right: 0;
+}
+
+section.service div.image {
+  width: 100%;
+  height: 230px;
+}
+section.service div.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+section.service h3.title {
+  padding: 16px 0;
+  font-weight: 600;
+  font-size: 24px;
+}
+section.service p.content {
+  line-height: 1.6;
+  color: #2F2117;
+}
+section.service a.btn {
+  display: inline-block;
+  text-decoration: underline;
+  font-weight: 600;
+  font-size: 20px;
+  color: #e4c140;
+  margin-top: auto;
+  text-align: center;
+}
+section.service a.btn:hover {
+  opacity: 0.8;
+}
+
+/* SP縺薙％縺九ｉ */
+@media screen and (max-width: 956px) {
+  section.service {
+    padding: 80px 16px;
+  }
+  section.service ul.item {
+    flex-wrap: wrap;
+    max-width: 768px;
+  }
+  section.service li.list {
+    width: 100%;
+    min-height: 400px;
+    margin-right: 0;
+    margin-bottom: 48px;
+  }
+  section.service li.list:last-child {
+    margin-bottom: 0;
+  }
+}
+
+/*譁咎≡繝励Λ繝ｳ */
+section.plan {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 16px 96px;
+}
+section.plan div.plan-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section.plan div.plan-inner div.plan-content {
+  width: 45%;
+}
+section.plan div.plan-inner div.plan-content p {
+  line-height: 2;
+  margin-bottom: 48px;
+}
+section.plan div.plan-inner div.plan-image {
+  width: 50%;
+}
+section.plan div.plan-inner div.plan-image img {
+  width: 100%;
+}
+ /* SP縺薙％縺九ｉ */
+ @media (max-width: 768px) {
+  section.plan {
+    padding: 0 16px 48px;
+  }
+  section.plan div.plan-inner {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  section.plan div.plan-inner div.plan-content {
+    width: 100%;
+  }
+  section.plan div.plan-inner div.plan-content p {
+    margin-bottom: 32px;
+  }
+  section.plan div.plan-inner div.plan-image {
+    width: 100%;
+    height: 240px;
+    margin-top: 32px;
+  }
+  section.plan div.plan-inner div.plan-image img {
+    height: 100%;
+    object-fit: cover;
+  }
+ }
+
+/*縺雁撫縺�粋繧上○ */
+section.contact {
+background-color: #F0F0F0;
+padding: 96px 16px;
+}
+/* 繝輔か繝ｼ繝�01 */
+.form01 {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.form01 .form-inner {
+  margin-bottom: 32px;
+}
+.form01 .form-label {
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+.form01 .form-label label {
+  vertical-align: middle;
+}
+.form01 .required {
+  display: inline-block;
+  background: #e4c140;
+  color: #fff;
+  font-size: 14px;
+  padding: 4px;
+  margin-left: 8px;
+  vertical-align: middle;
+}
+.form01 input[type="text"],
+.form01 input[type="email"] {
+  width: 100%;
+  height: 40px;
+  background: #fff;
+  padding: 16px;
+}
+.form01 input[type="date"] {
+  width: 100%;
+  height: 40px;
+  background: #fff;
+  padding: 16px;
+}
+.form01 textarea {
+  width: 100%;
+  height: 200px;
+  background: #fff;
+  padding: 16px;
+}
+.form01 .form-btn {
+  display: block;
+  width: 130px;
+  background: #2F2117;
+  color: #fff;
+  font-weight:600;
+  text-align: center;
+  padding: 8px 0;
+  margin: 0 auto;
+}
+
+/*繝輔ャ繧ｿ繝ｼ05 */
+footer.footer05{
+background: #e4c140;
+padding-top: 96px;
+}
+footer.footer05 .footer-container {
+text-align: center;
+}
+footer.footer05 nav.nav {
+margin-bottom: 48px;
+}
+footer.footer05 nav.nav ul.item {
+display: flex;
+justify-content: center;
+}
+footer.footer05 nav.nav ul.item li.list {
+padding: 0 8px;
+}
+footer.footer05 nav.nav ul.item li.list a {
+color: #2F2117;
+font-size: 16px;
+}
+footer.footer05 ul.sns-container {
+display: flex;
+justify-content: center;
+margin-bottom: 48px;
+}
+footer.footer05 ul.sns-container li.list {
+padding-right: 16px;
+}
+footer.footer05 ul.sns-container li.list img.icon-twitter {
+width: 25px;
+height: auto;
+}
+footer.footer05 ul.sns-container li.list img.icon-facebook {
+width: 20px;
+height: auto;
+}
+footer.footer05 ul.sns-container li.list img.icon-instagram {
+width: 20px;
+height: auto;
+}
+footer.footer05 p.copyright {
+color: #fff;
+background-color: #2F2117;
+padding: 14px;
+margin-top: 96px;
+}
+footer.footer05 .button01 {
+  background-color: #2F2117;
+}
+@media screen and (max-width: 768px) {
+footer.footer05 h1.logo {
+  margin: 0 auto 24px;
+}
+footer.footer05 nav.nav {
+  margin-bottom: 24px;
+}
+footer.footer05 nav.nav ul.item {
+  flex-wrap: wrap;
+}
+footer.footer05 nav.nav ul.item li.list {
+  padding: 0 8px 14px;
+}
+footer.footer05 ul.sns-container {
+  margin-bottom: 32px;
+}
+footer.footer05 ul.sns-container li.list {
+  padding: 0 8px;
+}
+}
+
+/*蝓ｺ譛ｬ逧�↑繝懊ち繝ｳ繝�じ繧､繝ｳ*/
+.button01 {
+  display: inline-block;
+  font-size: 18px;
+  font-weight:600;
+  padding: 12px 30px;
+  background: #e4c140;
+  color: #fff;
+  transition: all 0.2s;
+}
+.button01:hover {
+  opacity: 0.8;
+}
