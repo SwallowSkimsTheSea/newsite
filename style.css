@@ -548,6 +548,7 @@ section.fv-container {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 section.fv-container h2.copy {
   color: #fff;
